@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Tester</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <h1>Password Strength Tester</h1>
+             
+            <div class="password-container">
+                <input type="password" id="inputPassword" placeholder="Enter your password here..." oninput="testPassword()">
+                <div class="show-password">
+                    <input type="checkbox" id="showPasswordCheckbox" onchange="showPassword()">&nbsp;
+                    <small>Show Password</small>
+                </div>
+                <p id="passwordStrength">No Password</p>
+            </div>
+
+            <div class="result-container">
+                <p>It would take</p>
+                <h2 id="crackTime">0hr 0m 0sec</h2>
+                <p>to crack your password.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html> 
